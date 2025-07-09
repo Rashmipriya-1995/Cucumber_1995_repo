@@ -16,7 +16,7 @@ public class TC_VT_010_Test extends BaseClass{
 		HomePage hp=new HomePage(driver);
 		hp.getOrganizationLink().click();
 		
-		Assert.assertTrue(driver.getCurrentUrl().contains("Organizations"), "Organizations page is not displayed");
+		Assert.assertTrue(driver.getTitle().contains("Organizations"), "Organizations page is not displayed");
 		
 		test.log(Status.PASS, "Organizations page is  displayed");
 	}
